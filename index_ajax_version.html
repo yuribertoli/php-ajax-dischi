@@ -16,6 +16,7 @@
             <img src="./spotify-logo.png" alt="Spotify Logo">  
 
             <select v-model="selezioneGenere" name="boh"> <!-- faccio un binding del valore dell'opzione selezionata tramite v-model -->
+                <option value="">Tutti i generi</option>
                 <option v-for="genere in generi" :value="genere">{{genere}}</option>
             </select>
     
