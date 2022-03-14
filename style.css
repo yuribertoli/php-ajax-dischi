@@ -20,7 +20,7 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: 50px;
     background-color: #2e3a46;
 }
@@ -29,6 +29,17 @@ header img {
     height: 80%;
     width: auto;
     padding: 10px 0 0 20px;
+}
+
+header select {
+    height: 30px;
+    margin: 10px 30px 0 0;
+    width: 150px;
+    color: black;
+}
+
+header option {
+    color: black;
 }
 
 

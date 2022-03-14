@@ -14,14 +14,20 @@
         <header>
         
             <img src="./spotify-logo.png" alt="Spotify Logo">  
+
+            <select v-model="selezioneGenere" name="generi"> <!-- faccio un binding del valore dell'opzione selezionata tramite v-model -->
+                <option v-for="genere in generi" :value="genere">{{genere}}</option>
+            </select>
     
         </header>
     
         <main>
     
             <div class="container albums">
-    
-                <div class="card" v-for="data in albums">
+                
+                <!-- mostro solo le card che hanno come genere quello selezionato nella select dell'header -->
+                <!-- ciclo tutti gli elementi presenti nell'array albums -->
+                <div v-show="data.genre.includes(selezioneGenere)" class="card" v-for="data in albums">
 
                     <img :src="data.poster" :alt="data.title">
 
