@@ -22,9 +22,9 @@ const root = new Vue (
         mounted(){
             axios.get('http://localhost/php-ajax-dischi/server.php').then((risposta) => {
 
-                this.albums = risposta.data;
+                this.albums = risposta.data; //popolo l'array albums con l'array di oggetti della chiamata effettuata
 
-                this.getGenres();
+                this.getGenres(); //chiamo subito dopo la funzione per filtrarne i generi
 
                 console.log(risposta);
                 console.log("generi ciclati: " + this.generi);
