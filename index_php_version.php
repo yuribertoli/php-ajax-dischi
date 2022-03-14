@@ -34,6 +34,18 @@
                          "</div>";
                 }
 
+
+                /* Alternativa con più echo */
+                
+                /* foreach($database as $album) { 
+                    echo "<div class='card'>";
+                        echo "<img src='". $album['poster'] . "'>";
+                        echo "<h3>" . $album['title'] . "</h3>";
+                        echo "<span>" . $album['author'] . "</span>";
+                        echo "<span>" . $album['year'] . "</span>";
+                    echo "</div>";
+                } */
+
             ?>
 
         </div>
